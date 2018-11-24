@@ -29,3 +29,8 @@ W aktualnej formie aplikacja umożliwia:
 - edycja wybranych wierszy w bazie
 - wybór kursów do nauki
 - losowanie fraz w formie fiszek
+
+Żeby uruchomić aplikację niezbędne jest zainstalowanie Go i ściągnięcie MySQL driver.
+Servera MySQL (ja wykorzystałem PHPMyAdmin)
+
+Przykładowy skrypt MySQL zostanie dołączony w niedalekiej przyszłości.
