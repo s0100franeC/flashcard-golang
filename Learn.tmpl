@@ -1,0 +1,18 @@
+{{ define "Learn" }}
+  {{ template "Header" }}
+    {{ template "Menu"  }}
+    <h2> Learn {{ .CourseName }} </h2>
+	<div id="flashcard">
+		<div class="word" id="forborder">
+			<p>Native</p>
+			<p class="bigger">{{ .Native }}</p>
+		</div>
+		<div class="word" style="margin-bottom: 15px;">
+			<p class="bigger">{{ .Translation }}</p>
+			<p>Translation</p>
+		</div>
+	</div>
+	<p><a href="/learn?courseName={{ .CourseName }}"><i id="next-ico" class="material-icons">&#xe01f;</i></a></p>
+	<p>Next</p>
+  {{ template "Footer" }}
+{{ end }}

@@ -1,0 +1,90 @@
+{{ define "Show" }}
+  {{ template "Header" }}
+    {{ template "Menu"  }}
+    <h2> Phrase ID: {{ .ID }} </h2>
+	<div>
+		<table style="width: 300px;">
+			<tr>
+				<th>
+					Attribute: 
+				</th>
+				<th>
+					Value
+				</th>
+			</tr>
+			<tr>
+				<td>
+					Jack: 
+				</td>
+				<td>
+					{{ .Jack }}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Native: 
+				</td>
+				<td>
+					{{ .Native }}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Translation: 
+				</td>
+				<td>
+					{{ .Translation }}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Course: 
+				</td>
+				<td>
+					{{ .CourseName }}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Category: 
+				</td>
+				<td>
+					{{ .Category }}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Language: 
+				</td>
+				<td>
+					{{ .NatLanguage }}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Counter: 
+				</td>
+				<td>
+					{{ .Counter }}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Correct: 
+				</td>
+				<td>
+					{{ .Correct }}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Edit: 
+				</td>
+				<td>
+					<a href="/edit?id={{ .ID }}"><i class="material-icons">&#xe150;</i></a>
+				</td>
+			</tr>
+		</table>
+	</div>
+  {{ template "Footer" }}
+{{ end }}

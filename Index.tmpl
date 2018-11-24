@@ -1,0 +1,44 @@
+{{ define "Index" }}
+  {{ template "Header" }}
+    {{ template "Menu"  }}
+    <h2> User Phrases </h2>
+	<div style="overflow-x:auto;">
+    <table border="1">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Jack</th>
+        <th>Native</th>
+        <th>Translation</th>
+        <th>Course</th>
+        <th>Category</th>
+        <th>Language</th>
+        <th>Counter</th>
+        <th>Correct</th>
+        <th>View</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+       </thead>
+       <tbody>
+    {{ range . }}
+      <tr>
+        <td>{{ .ID }}</td>
+        <td>{{ .Jack }}</td>
+        <td>{{ .Native }}</td>
+        <td>{{ .Translation }}</td>
+        <td>{{ .CourseName }}</td>
+        <td>{{ .Category }}</td>
+        <td>{{ .NatLanguage }}</td>
+        <td>{{ .Counter }}</td>
+        <td>{{ .Correct }}</td>
+        <td><a href="/show?id={{ .ID }}"><i class="material-icons">&#xe8f4;</i></a></td>
+        <td><a href="/edit?id={{ .ID }}"><i class="material-icons">&#xe150;</i></a></td>
+        <td><a href="/delete?id={{ .ID }}"><i class="material-icons">&#xe92b;</i></a></td>
+      </tr>
+    {{ end }}
+       </tbody>
+    </table>
+	</div>
+  {{ template "Footer" }}
+{{ end }}

@@ -1,0 +1,22 @@
+{{ define "Courses" }}
+  {{ template "Header" }}
+    {{ template "Menu"  }}
+    <h2> COURSE LIST </h2>
+    <table id="learntab" border="1">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Start</th>
+      </tr>
+       </thead>
+       <tbody>
+    {{ range . }}
+      <tr>
+        <td>{{ .CourseName }}</td>
+        <td><a href="/learn?courseName={{ .CourseName }}"><i class="material-icons">&#xe039;</i></a></td>
+      </tr>
+    {{ end }}
+       </tbody>
+    </table>
+  {{ template "Footer" }}
+{{ end }}
