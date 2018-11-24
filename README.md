@@ -18,9 +18,12 @@ C:.
         Show.tmpl
   
 OPIS:
-Program w założeniu miał służyć do tworzenia własnych kursów np. językowych, gdzie użytkownik może wprowadzić własne frazy i ich tłumaczenia. Efekt finalny jest dla mnie zadowolony w 60% (brak systemu powtórkowego weryfikującego poprawność zapamiętanych tłumaczeń, nieintuicyjne tworzenie kursów, brak usera).
+Program w założeniu miał służyć do tworzenia własnych kursów np. językowych, gdzie użytkownik może wprowadzić własne frazy i ich tłumaczenia. Efekt finalny jest dla mnie zadowalający w 60% (brak systemu powtórkowego weryfikującego poprawność zapamiętanych tłumaczeń, nieintuicyjne tworzenie kursów, brak usera).
 
 W aktualnej formie aplikacja umożliwia:
+- łączenie się z wcześniej utworzoną bazą danych (nie zaimplementowałem tworzenia bazy od zera)
+- obsługa w interfejsie webowym napisanym w HTML/CSS
+
 - dodawania nowych słów do bazy danych MySQL
 - szczegóły podgląd wybranych wierszy w bazie
 - edycja wybranych wierszy w bazie
