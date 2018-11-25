@@ -31,6 +31,5 @@ W aktualnej formie aplikacja umożliwia:
 - losowanie fraz w formie fiszek
 
 Żeby uruchomić aplikację niezbędne jest zainstalowanie Go i ściągnięcie MySQL driver.
-Servera MySQL (ja wykorzystałem PHPMyAdmin)
+Servera MySQL (ja wykorzystałem Apache i PHPMyAdmin na XAMPP)
 
-Przykładowy skrypt MySQL zostanie dołączony w niedalekiej przyszłości.
